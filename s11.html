@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Strona z blokami</title>
+  <style>
+    body {
+      background-color: gray;
+      color: white;
+    }
+    header, footer {
+      background-color: gray;
+      color: white;
+      padding: 10px;
+    }
+    .block {
+      background-color: pink;
+      margin: 5px;
+      min-width: 200px;
+      word-wrap: break-word;
+    }
+    p {
+      margin: 5px;
+    }
+    @media  screen and (max-width: 580px) {
+      .block {
+        font-size: 15px;
+        background-color: pink;
+        margin: 5px 0;
+        width: 100%;
+      }
+    }
+    @media  screen and (min-width: 581px) and (max-width: 1000px) {
+      .block {
+        font-size: 16px;
+        background-color: yellow;
+        margin: 5px;
+        width: calc(50% - 10px);
+      }
+    }
+    @media  screen and (min-width: 1001px) {
+      .block {
+        font-size: 17px;
+        background-color: pink;
+        margin: 5px;
+        width: calc(33.33% - 10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h3>Nagłówek</h3>
+  </header>
+  <main>
+    <div class="block">
+      <h3>Blok 1</h3>
+      <p>Treść bloku 1</p>
+    </div>
+    <div class="block">
+      <h3>Blok 2</h3>
+      <p>Treść bloku 2</p>
+    </div>
+    <div class="block">
+      <h3>Blok 3</h3>
+      <p>Treść bloku 3</p>
+    </div>
+    <div class="block">
+      <h3>Blok 4</h3>
+      <p>Treść bloku 4</p>
+    </div>
+    <div class="block">
+      <h3>Blok 5</h3>
+      <p>Treść bloku 5</p>
+    </div>
+    <div class="block">
+      <h3>Blok 6</h3>
+      <p>Treść bloku 6</p>
+    </div>
+    <div class="block">
+      <h3>Blok 7</h3>
+      <p>Treść bloku 7</p>
+    </div>
+    <div class="block">
+      <h3>Blok 8</h3>
+      <p>Treść bloku 8</p>
+    </div>
+    <div class="block">
+      <h3>Blok 9</h3>
+      <p>Treść bloku 9</p>
+    </div>
+    <div class="block">
+      <h3>Blok 10</h3>
+      <p>Treść bloku 10</p>
+    </div>
+    <div class="block">
+      <h3>Blok 11</h3>
+      <p>Treść bloku 11</p>
+    </div>
+    <div class="block">
+      <h3>Blok 12</h3>
+      <p>Treść bloku 12</p>
+    </div>
+  </main>
+  <footer>
+    <h3>Stopka</h3>
+  </footer>
+</body>
+</html>
